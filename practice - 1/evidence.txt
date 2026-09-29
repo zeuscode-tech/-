@@ -1,0 +1,22 @@
+=== Основной пользователь ===
+zeus
+=== Пользователь student2 и его группы ===
+uid=1002(student2) gid=1002(student2) groups=1002(student2),100(users),1001(developers)
+=== Группы основного пользователя ===
+uid=1000(zeus) gid=1000(zeus) groups=1000(zeus),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),111(lpadmin),114(lxd)
+=== Права общего каталога ===
+drwxrwsr-x 2 root developers 4096 Sep 22 16:43 /srv/shared
+=== Владелец и содержимое файла ===
+-rw-rw-r-- 1 student2 developers 20 Sep 22 16:43 /srv/shared/student2.txt
+Created by student2
+=== Проверка права записи для zeus ===
+Права записи нет
+=== Настройки в новой сессии Bash ===
+alias ll='ls -lah'
+alias cshared='cd /srv/shared'
+B
+/srv/shared
+total 12K
+drwxrwsr-x 2 root     developers 4.0K Sep 22 16:43 .
+drwxr-xr-x 3 root     root       4.0K Sep 22 16:39 ..
+-rw-rw-r-- 1 student2 developers   20 Sep 22 16:43 student2.txt
