@@ -1,0 +1,37 @@
+=== Контрольная сумма данных ===
+93b24a51dea4a2f04800e793deb92105  -
+=== ERROR по модулям ===
+Модуль	Число сообщений
+db	637
+net	600
+disk	321
+auth	269
+api	152
+cache	116
+fs	76
+sched	74
+=== WARN: первые 3 ===
+Модуль	Число сообщений
+net	933
+disk	889
+db	740
+=== Без аргументов ===
+Использование: report.sh КАТАЛОГ ERROR|WARN [--top N]
+Пример: report.sh data ERROR --top 3
+Код возврата: 1
+=== Несуществующий каталог ===
+Ошибка: каталог не существует: /no-such-lab2-directory
+Код возврата: 1
+=== Размер: Python и wc ===
+19076
+19076
+=== Число системных вызовов: Python, затем cat ===
+403
+139
+=== Операции с целевым файлом ===
+5241  openat(AT_FDCWD</home/zeus/lab2>, "data/01.log", O_RDONLY|O_CLOEXEC) = 3</home/zeus/lab2/data/01.log>
+5241  fstat(3</home/zeus/lab2/data/01.log>, {st_mode=S_IFREG|0664, st_size=19076, ...}) = 0
+5241  lseek(3</home/zeus/lab2/data/01.log>, 0, SEEK_CUR) = 0
+5241  read(3</home/zeus/lab2/data/01.log>, "2026-02-01 00:00:28 INFO module="..., 19077) = 19076
+5241  read(3</home/zeus/lab2/data/01.log>, "", 1) = 0
+5241  close(3</home/zeus/lab2/data/01.log>) = 0
