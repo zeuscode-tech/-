@@ -1,0 +1,10 @@
+Наблюдатель PID=4856
+Исходный родитель PID=4858 завершился, код=0
+Сирота PID=4859, новый PPID=2327
+    PID    PPID S COMMAND
+   2327       1 S /usr/lib/systemd/systemd --user
+   4859    2327 S python3 orphan.py
+
+Проверка после завершения:
+    PID    PPID S COMMAND
+Оба демонстрационных процесса отсутствуют.

@@ -1,0 +1,11 @@
+Родитель PID=4829, ребёнок PID=4834
+
+До waitpid: ребёнок — зомби
+    PID    PPID S STAT COMMAND
+   4834    4829 Z Z+   python3
+
+waitpid: PID=4834, код=42
+
+После waitpid:
+    PID    PPID S STAT COMMAND
+Процесс отсутствует: зомби убран.

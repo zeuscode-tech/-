@@ -1,0 +1,10 @@
+Родитель PID=4900, элементов=8000000
+Родитель до fork: RSS=73900 KiB, PSS=69090 KiB, Private_Dirty=67692 KiB
+
+Ребёнок PID=4905
+До изменения списка: RSS=71640 KiB, PSS=34777 KiB, Private_Dirty=400 KiB
+После изменения списка: RSS=71832 KiB, PSS=66103 KiB, Private_Dirty=62956 KiB
+Разница: RSS=+192 KiB, PSS=+31326 KiB, Private_Dirty=+62556 KiB
+
+Ребёнок завершён, код=0
+Список родителя остался неизменным: True
