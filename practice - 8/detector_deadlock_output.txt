@@ -1,0 +1,13 @@
+Журнал: events_deadlock.txt
+
+1: acquire P1 R1
+2: acquire P2 R2
+3: wait P1 R2
+    ребро: P1 -> P2
+4: wait P2 R1
+    ребро: P1 -> P2
+    ребро: P2 -> P1
+
+Взаимоблокировка обнаружена: True
+Цикл: P1 -> P2 -> P1
+Участники: P1, P2

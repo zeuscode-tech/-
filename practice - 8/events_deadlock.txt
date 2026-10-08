@@ -1,0 +1,4 @@
+acquire P1 R1
+acquire P2 R2
+wait P1 R2
+wait P2 R1

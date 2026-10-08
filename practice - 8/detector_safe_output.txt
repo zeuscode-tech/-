@@ -1,0 +1,12 @@
+Журнал: events_safe.txt
+
+1: acquire P1 R1
+2: wait P2 R1
+    ребро: P2 -> P1
+3: release P1 R1
+4: acquire P2 R1
+5: release P2 R1
+
+Граф ожидания: рёбер нет
+Взаимоблокировка обнаружена: False
+Нарушений журнала: 0
