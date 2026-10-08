@@ -1,0 +1,5 @@
+numbers.txt
+web/
+__pycache__/
+*.pyco
+
